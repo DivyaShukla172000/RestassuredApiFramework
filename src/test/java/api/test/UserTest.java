@@ -31,8 +31,6 @@ public class UserTest {
 		fake = new Faker();
 		userpayload = new User();
 		
-		
-
 		userpayload.setName(fake.name().fullName());
 		userpayload.setJob(fake.funnyName().name());
 		userpayload.setCountry(fake.address().country());
@@ -51,7 +49,7 @@ public class UserTest {
 	 */
 	
 	
-	//Post method
+	//Post method jkgui
 	@Test(priority=1)
 	public void testPostuserWithReturnID() {
 		UserID = UserEndPoints.testPostRequestWithReturnID(userpayload);
